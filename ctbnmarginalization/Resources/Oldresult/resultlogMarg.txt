@@ -1,0 +1,42 @@
+|N°1|
+***************************************************
+Resources/Result/Q_JIM.txt
+   -4.0000    1.0000    3.0000         0
+    2.0000   -7.0000         0    5.0000
+   15.0000         0  -16.0000    1.0000
+         0    4.0000    2.0000   -6.0000
+
+***************************************************
+Resources/Matrices/Distribution/P0y|0.txt
+   0.3000   0.7000
+
+Resources/Matrices/Distribution/P0z|y1.txt
+   0.7000   0.3000
+
+Resources/Matrices/Distribution/P0z|y2.txt
+   0.3000   0.7000
+
+Concatenate distributions with parents
+
+   0.7000   0.3000
+   0.3000   0.7000
+
+Matrix-before colonns elements sum
+
+   0.2100   0.2100
+   0.0900   0.4900
+
+Matrix-after colonns elements sum
+
+   0.4200
+   0.5800
+
+**************************************
+Result of the Marginalization is: 
+
+Marg P0:
+  -4.0000   4.0000
+   5.7069  -5.7069
+
+**************************************
+

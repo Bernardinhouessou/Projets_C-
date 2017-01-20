@@ -1,0 +1,49 @@
+        The syntax or template to generate the required matrices are :
+
+				   nbCdt_index=nb of Variables conditions and nbCdt_index=nb_rows=nb_columns 
+	---------------------------------------------------------------------------------------------------------------------------------
+	CIM :   (nbCdt_index=0);   Q_Var(|[0])::=(valeur ds Matrix Q) for a CIM matrix with no Condition Variable i.e Conditions=0 
+
+		(nbCdt_index);	   Q_Var(|[CondVar1_index,CondVar2_index,...,CondVarn_index])::=(Content of Matrix Q_Var) 
+				   for a CIM with Conditions=[(CondVar1_index,CondVar2_index,...,CondVarn_index)]
+	     ----------------------------------------------------------------------------------------------------------------------------
+	JIM :   (nbCdt_index*2);   Q_JIM(StatespaceVariable1,StatespaceVariable2,etc...) for JIM with w, e, c, b as statespaces variables
+	---------------------------------------------------------------------------------------------------------------------------------
+
+    	EXAMPLES :
+	*CIM :
+	 
+	 	 (nbCdt_index=0);     Q_w(0)::=(-0.5,0.5,0.5,-0.5) for Qw
+
+		 (nbCdt_index=2);     Q_e(|[w_0,b_0])::=(-0.1 0.1 
+						 	  2  -2 ) 
+				      for Qe|w0,b0  with Conditions=[w_0,b_0]
+
+		 (nbCdt_index=2);     Q_e(|[w_0,b_1])::=(-0.5  0.5 
+						 	  0.5 -0.5) 
+				      for Qe|w0,b1 with Conditions=[w_0,b_1]
+
+		 (nbCdt_index=2);     Q_e(|[w_0,b_1])::=(-0.3 0.3 
+						 	  1  -1  ) 
+				     for Qe|w1,b0 with Conditions=[w_1,b_0]	
+
+		 (nbCdt_index=2);     Q_e(|[w_1,b_1])::=(-1    1 
+						 	  0.1 -0.1) 
+				      for Qe|w1,b1 with Conditions=[w_1,b_1]	
+	
+		/*	   
+		    c;e0;-0.2,0.2,1,-1; for Qc|e0
+		    c;e1;-1,1,0.2,-0.2; for Qc|e1
+		    b;e0,c0;-0.2,0.2,0.8,-0.8; for Qc|e0,c0
+		    b;e0,c1;-1,1,0.1,-0.1; for Qc|e0,c1
+		    b;e1,c0;-0.1,0.1,1,-1; for Qc|e1,c0
+		    b;e1,c1;-0.2,0.2,0.6,-0.6; for Qc|e1,c1
+		*/
+
+	*JIM :
+	 
+	 	 (nbCdt_index*2=);      Q_JIM(w,e,c,b) for JIM with w, e, c, b as statespaces variables
+		  		       
+
+
+
