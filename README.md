@@ -1,6 +1,6 @@
 # Projets_C++
 Liste de mes différents projets en C++.(CTBNs et autres...)
-
+	**CTBN(s):** Continuous time Bayesian networks (CTBNs)==> Les réseaux bayésiens à temps continu
 
 	@Copyright
 	**Bernardin Houessou** 
